@@ -7,6 +7,8 @@
       "express": "2.5.8",
       "jade": "git://github.com/visionmedia/jade.git",
       "sqlite3": ">=2.0.0",
-      "sequelize" : "git://github.com/sdepold/sequelize.git"
+      "sequelize" : "git://github.com/sdepold/sequelize.git",
+      "underscore" : ">=0.0.1",
+      "stylus" : ">=0.0.1"
   }
 }

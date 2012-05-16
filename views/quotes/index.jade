@@ -1,0 +1,5 @@
+ul
+- each quote in quotes
+  li
+    span= quote.description
+    a(href="quotes/edit/"+quote.id) edit

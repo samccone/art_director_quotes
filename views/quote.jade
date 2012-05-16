@@ -1,4 +1,3 @@
-.div
-  - each quote in data
-    li= quote.description
-a(href="/add") add some
+span= quote.description
+br
+a(href="/edit/"+quote.id) edit

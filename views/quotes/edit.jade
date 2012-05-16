@@ -1,0 +1,8 @@
+h3 Edit
+form( action = "/quotes/edit/"+quote.id, method="post")
+	textarea(name='description')= quote.description
+	br
+	input(type= "submit", value="Update")
+form( action = "/quotes/edit/"+quote.id, method="post")
+	input(type="text", value="delete", name="delete", style="display: none")
+	input(type = "submit", value="Delete")
