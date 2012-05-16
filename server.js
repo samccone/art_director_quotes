@@ -55,13 +55,15 @@ webServer.post('/quotes/edit/:id', function(req, res){
       data.description = req.param('description');
       data.save();
     }
-    res.redirect('/');
   });
+  res.redirect('/quotes');
 });
 
 webServer.post('/quotes/new', function(req, res){
   var quote = Quote.build({
-    description: req.param('quote')
+    description: req.param('quote'),
+    fontfamily: req.param('fontfamily'),
+    fontsize: req.param('fontsize'),
   });
   quote.save().success(function(){
     console.log("quote created!")

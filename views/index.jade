@@ -1,4 +1,4 @@
 ul
 	- each quote in quotes
-		li= quote.description
+		li(style="font-size:"+quote.fontsize+"px;font-family:"+quote.fontfamily)= quote.description
 a(href="/quotes/new") new

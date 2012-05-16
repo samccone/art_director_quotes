@@ -1,4 +1,27 @@
+script
+  $(function(){
+    $('[type="range"]').bind('change',function(e){
+      $('[name="quote"]').css({
+        'font-size': $('[type="range"]').val() + "px",
+        'height': $('[type="range"]').val() * 1.4 + "px"
+        });
+      });
+    $('[name="fontfamily"]').bind('change', function(e){
+      $('[name="quote"]').css({
+        'font-family' : $('[name="fontfamily"]').val()
+      });
+    });
+  });
+
 form(action="/quotes/new", method="post")
-  textarea(name="quote")
+  input(type="range", min=5, max=200, value=20, name="fontsize")
+  br
+  select(name="fontfamily")
+    option(value="Helvetica") Helvetica
+    option(value="Comic Sans, Comic Sans MS, cursive") Comic Sans
+    option(value="Impact, fantasy") Impact
+    option(value="Avantgarde, sans-serif") Avantgarde
+  br
+  textarea(name="quote", placeholder="quote here")
   br
   input(type="submit") submit
