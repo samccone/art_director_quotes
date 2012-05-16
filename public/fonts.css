@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'AbrahamLincolnRegular';
+    src: url('fonts/abrahamlincoln-webfont.eot');
+    src: url('fonts/abrahamlincoln-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/abrahamlincoln-webfont.woff') format('woff'),
+         url('fonts/abrahamlincoln-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BenderSolidRegular';
+    src: url('fonts/bender-solid-webfont.eot');
+    src: url('fonts/bender-solid-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bender-solid-webfont.woff') format('woff'),
+         url('fonts/bender-solid-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

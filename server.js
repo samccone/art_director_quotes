@@ -5,6 +5,7 @@ var webServer = express.createServer();
 
 webServer.set('view engine', 'jade');
 webServer.use(express.bodyParser());
+webServer.use(express.static(__dirname + '/public'));
 
 var appPort = process.env['app_port'] || 3000;
 var sequelize = new Sequelize(null, null, null, {storage: 'database.sqlite', dialect: 'sqlite'});
